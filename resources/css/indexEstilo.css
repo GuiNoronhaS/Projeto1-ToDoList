@@ -60,6 +60,10 @@ p {
     border-style:double;
 }
 
+#lista:empty {
+    display: none;
+ }
+
 li.estilizarLista  {
     position: relative;
     padding: 12px 8px 12px 20px;
