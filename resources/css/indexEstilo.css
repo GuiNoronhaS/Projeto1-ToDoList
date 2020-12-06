@@ -48,18 +48,22 @@ p {
 }
 
 #lista {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     list-style-type: none;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 0;
     padding: 0;
-
+    border-width:5px;  
+    border-style:double;
 }
 
 li.estilizarLista  {
     position: relative;
     padding: 12px 8px 12px 20px;
-    background-color: #eee;
+    background-color: rgb(184, 202, 236);
     font-size: 20px;
     transition: 0.2s;
     -webkit-user-select: none;
@@ -69,10 +73,10 @@ li.estilizarLista  {
   }
   
   li.estilizarLista:nth-child(odd) {
-    background-color: #f9f9f9;
+    background-color: rgb(150, 165, 194);
   }
   li.estilizarLista:hover {
-    background: #ddd;
+    background:  rgb(112, 122, 143);
   }
 
 .estilizarInputLista{
@@ -83,6 +87,8 @@ li.estilizarLista  {
     float: center;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
 }
 .estilizarDeleteButton {
     margin-left: 10px;
@@ -100,4 +106,12 @@ li.estilizarLista  {
 .estilizarDeleteButton:hover {
     background-color: rgb(195, 204, 212);
     transition: 0.1s;
+}
+
+
+.tooltip {
+    display:inline-block;
+    position:relative;
+    border-bottom:1px dotted #666;
+    text-align:left;
 }

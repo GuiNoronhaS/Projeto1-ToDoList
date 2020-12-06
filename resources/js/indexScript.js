@@ -24,30 +24,31 @@ function adicionarALista(idLista, novoItemLista, marcarCheck) {
     var itemLista = document.createElement('li');
     itemLista.id = 'li-' + idLista;
     itemLista.className = 'estilizarLista';
+
     var item = document.createElement('input');
     item.type = "checkbox";
     item.id = 'input-' + idLista;
-    
     item.className= 'estilizarInputLista';
-
     item.checked = marcarCheck;
     item.onchange = conferirCheckbox;
     itemLista.appendChild(item);
+
     var nomeItem = document.createElement('label');
     nomeItem.id = 'label-' + idLista;
-    
-    nomeItem.className= 'estilizarLabelLista';
-    
+    nomeItem.className= 'estilizarLabelLista';    
     nomeItem.textContent = novoItemLista;
     itemLista.appendChild(nomeItem);
+
     var deleteButton = document.createElement('button');
     deleteButton.id = 'delete-' + idLista;
     deleteButton.className= 'estilizarDeleteButton';
     deleteButton.onclick = deleteTarefa;
+
     var icone = document.createElement('img')
     icone.src = "/resources/assets/icons/delete.png";
     icone.alt = "delete";
     deleteButton.appendChild(icone);
+    
     itemLista.appendChild(deleteButton);
     campoLista.appendChild(itemLista);
 }
