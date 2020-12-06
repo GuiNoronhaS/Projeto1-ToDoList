@@ -5,6 +5,7 @@ input:checked + label {
 body {
     text-align: center;
     background-color: rgb(183, 204, 226);
+    margin-bottom: 15px;
 }
 
 #tarefa {
@@ -23,34 +24,80 @@ body {
     vertical-align: middle;
 }
 
-#adicionar>img{
-    height: 30px;
-    width: 25px;
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+#creditos {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+#adicionar {
     border: none;
+    background-color:  rgb(183, 204, 226);
     cursor: pointer;
+    outline: none;
+    padding: 10px;
+}
+#adicionar>img{
+    height: 40px;
+    width: 35px;
     vertical-align: middle;
 }
 
 #lista {
     list-style-type: none;
-}
-li.estilizarLista {
-    margin: 20px;
-    
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
 }
 
+li.estilizarLista  {
+    position: relative;
+    padding: 12px 8px 12px 20px;
+    background-color: #eee;
+    font-size: 20px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  li.estilizarLista:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  li.estilizarLista:hover {
+    background: #ddd;
+  }
+
+.estilizarInputLista{
+    float: left;
+    transform: scale(1.3);
+}
+.estilizarLabelLista{
+    float: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .estilizarDeleteButton {
     margin-left: 10px;
+    cursor: pointer;
+    float: right;
 }
 
 .estilizarDeleteButton >img {
     height: 30px;
     width: 25px;
     padding-left: 0;
-    border: none;
-    cursor: pointer;
     vertical-align: middle;
 }
+
 .estilizarDeleteButton:hover {
-    background-color: red;
+    background-color: rgb(195, 204, 212);
+    transition: 0.1s;
 }

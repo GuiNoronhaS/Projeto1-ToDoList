@@ -27,11 +27,17 @@ function adicionarALista(idLista, novoItemLista, marcarCheck) {
     var item = document.createElement('input');
     item.type = "checkbox";
     item.id = 'input-' + idLista;
+    
+    item.className= 'estilizarInputLista';
+
     item.checked = marcarCheck;
     item.onchange = conferirCheckbox;
     itemLista.appendChild(item);
     var nomeItem = document.createElement('label');
     nomeItem.id = 'label-' + idLista;
+    
+    nomeItem.className= 'estilizarLabelLista';
+    
     nomeItem.textContent = novoItemLista;
     itemLista.appendChild(nomeItem);
     var deleteButton = document.createElement('button');
