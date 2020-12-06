@@ -2,18 +2,48 @@ input:checked + label {
     text-decoration: line-through;
 }
 
+body {
+    text-align: center;
+    background-color: rgb(183, 204, 226);
+}
 
-#adicionar{
-    border: none;           /* assuming we don't want any borders */
-    cursor: pointer;        /* make the cursor like hovering over an <a> element */
-    vertical-align: middle; /* align the text vertically centered */
+#tarefa {
+    height: 30px;
+    width: 300px;
+}
+
+#cabecalho {
+    height: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+#cabecalho>img{
+    width: 90px;
+    border: none;
+    vertical-align: middle;
+}
+
+#adicionar>img{
+    height: 30px;
+    width: 25px;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#lista {
+    list-style-type: none;
+}
+li.estilizarLista {
+    margin: 20px;
+    
 }
 
 .estilizarDeleteButton {
     margin-left: 10px;
 }
 
-.estilizarDeleteButton , img {
+.estilizarDeleteButton >img {
     height: 30px;
     width: 25px;
     padding-left: 0;
